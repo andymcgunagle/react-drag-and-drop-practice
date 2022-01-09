@@ -1,3 +1,4 @@
+import Circle from "./components/Circle.jsx";
 import Draggable from "./components/Draggable.jsx";
 import DropZone from "./components/DropZone.jsx";
 
@@ -9,36 +10,35 @@ export default function App() {
       </h1>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-
         <DropZone additionalStyles="border-red-500">
           <Draggable id="green-circle">
-            <p className="h-[75%] w-[75%] flex justify-center items-center text-gray-50 bg-green-500 rounded-full">
+            <Circle additionalStyles="bg-green-500">
               Green
-            </p>
+            </Circle>
           </Draggable>
         </DropZone>
 
         <DropZone additionalStyles="border-blue-500">
           <Draggable id="blue-circle">
-            <p className="h-[75%] w-[75%] flex justify-center items-center text-gray-50 bg-blue-500 rounded-full">
+            <Circle additionalStyles="bg-blue-500">
               Blue
-            </p>
+            </Circle>
           </Draggable>
         </DropZone>
 
         <DropZone additionalStyles="border-yellow-500">
           <Draggable id="red-circle">
-            <p className="h-[75%] w-[75%] flex justify-center items-center text-gray-50 bg-red-500 rounded-full">
+            <Circle additionalStyles="bg-red-500">
               Red
-            </p>
+            </Circle>
           </Draggable>
         </DropZone>
 
         <DropZone additionalStyles="border-purple-500">
           <Draggable id="yellow-circle">
-            <p className="h-[75%] w-[75%] flex justify-center items-center text-gray-50 bg-yellow-500 rounded-full">
+            <Circle additionalStyles="bg-yellow-500">
               Yellow
-            </p>
+            </Circle>
           </Draggable>
         </DropZone>
 

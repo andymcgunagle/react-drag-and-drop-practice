@@ -7,7 +7,7 @@ export default function Draggable({ id, children }) {
 
   return (
     <div
-      draggable
+      draggable={true}
       id={id}
       onDragEnd={e => e.target.style.display = "flex"}
       onDragStart={dragStartHandler}
